@@ -21,7 +21,7 @@ while :; do
            find . -type f -perm /ugo+r
            ;;
         d) echo "All files sith special:"
-           find . -type !f
+           find . -type l -o -type s -o -type p
 
 
            ;;
